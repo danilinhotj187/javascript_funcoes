@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Médicos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        form {
+            margin-bottom: 20px;
+        }
+        label {
+            display: block;
+            margin: 10px 0 5px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #f4f4f4;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Cadastro de Médicos</h1>
+
+<form id="form-medico">
+    <label for="nome">Nome do Médico:</label>
+    <input type="text" id="nome" required>
+
+    <label for="especialidade">Especialidade:</label>
+    <input type="text" id="especialidade" required>
+
+    <label for="crm">CRM:</label>
+    <input type="text" id="crm" required>
+
+    <button type="submit">Inserir</button>
+</form>
+
+<table>
+    <thead id="table-head"></thead>
+    <tbody id="table-body"></tbody>
+</table>
+
+<script src="script.js"></script>
+
+</body>
+</html>
